@@ -2,11 +2,15 @@
 
 <?php 
 
-$a = 5;
-$b = 10;
+$a = 123;
 
-$sum = $a + $b;
+$temp = $a;
+$sum = 0;
+while($a != 0){
+  $rem = $a % 10;
+  $sum += $rem;
+  $a = intval($a /10);
+}
 
-echo "Sum of $a and $b is $sum"
-
+echo $sum;
 ?>
